@@ -39,7 +39,9 @@ header {
     /* border: 3px solid black;
     border-radius: 7px 7px 7px 7px; */
 
+    /* background-image: url(./imagens/foto_nh.jpeg); */
     background-image: url(./imagens/foto_nh.jpeg);
+
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: cover;
