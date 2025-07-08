@@ -9,29 +9,198 @@
     <title>Aliança Bíblica de Novo Hamburgo</title>
 </head>
 
-<body>
-   
-    <header>
-        <h1>Aliança Bíblica de Novo Hamburgo</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre Nós</a></li>
-                <li><a href="#">Ministérios</a></li>
-                <li><a href="#">Programação</a></li>
-                <li><a href="#">Eventos</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-        <!-- <img src="./imagens/abnh_logo_sem-fundo.png" width="100px"> -->
-    </header>
 
-    <main>
-        <h2>TITULO H2</h2>
-        <div>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam sit commodi aut beatae aperiam laudantium dolores, molestiae repellat fuga, repellendus et harum omnis provident facilis animi pariatur ea cum alias? Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit harum sunt commodi, voluptates eveniet totam nulla magni iusto cumque repudiandae recusandae exercitationem sit temporibus, deleniti hic voluptatum id! Deserunt, molestias. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus temporibus accusantium placeat laboriosam repudiandae aliquam explicabo repellat, ducimus fuga numquam suscipit necessitatibus doloribus error reprehenderit perferendis id adipisci praesentium! Rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore vero modi, laborum, placeat earum consequuntur dicta saepe eveniet ipsa officiis unde reprehenderit excepturi neque tempora explicabo quos hic doloribus et!</p>
+<header class="header">
+    <nav class="navbar">
+        <a href="#" class="logo">
+            <img src="imagens/abnh_logo_sem-fundo.png" alt="Logo ABNH" width="50">
+            <span>Aliança Bíblica de Novo Hamburgo</span>
+        </a>
+        <button class="menu-toggle" aria-label="Abrir menu">
+            <span class="hamburger"></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="#">Início</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#ministries">Ministérios</a></li>
+            <li><a href="#events">Eventos</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="main-content">
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Bem-vindo à Aliança Bíblica de Novo Hamburgo</h1>
+            <p>Uma comunidade para você e sua família crescerem em Cristo.</p>
+            <a href="#" class="btn-primary">Junte-se a nós</a>
         </div>
-    </main>
+    </section>
+
+    <section class="about" id="about">
+        <h2>Sobre Nós</h2>
+        <p>
+            Somos uma igreja comprometida com o ensino da Palavra de Deus, comunhão e serviço à comunidade de Novo
+            Hamburgo.
+        </p>
+        <a href="#" class="btn-secondary">Saiba Mais</a>
+    </section>
+
+    <section class="ministries" id="ministries">
+        <h2>Ministérios</h2>
+        <div class="ministries-list">
+            <div class="ministry-card">
+                <h3>Infantil</h3>
+                <p>Ensino bíblico e atividades para crianças.</p>
+            </div>
+            <div class="ministry-card">
+                <h3>Jovens</h3>
+                <p>Encontros, discipulado e eventos para jovens.</p>
+            </div>
+            <div class="ministry-card">
+                <h3>Famílias</h3>
+                <p>Suporte e integração para todas as famílias.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="events" id="events">
+        <style>
+            .events {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding: 2em 1em;
+                background: #f9f9f9;
+                border-radius: 12px;
+                box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+                margin-bottom: 2em;
+            }
+
+            .events h2 {
+                margin-bottom: 1.5em;
+                font-size: 2rem;
+                color: #2c3e50;
+            }
+
+            .events-list {
+                padding-left: 0;
+                list-style: none;
+                width: 100%;
+                max-width: 420px;
+                margin: 0 auto 2em auto;
+                display: flex;
+                flex-direction: column;
+                gap: 1.5em;
+            }
+
+            .events-list li {
+                background: #fff;
+                border-radius: 10px;
+                box-shadow: 0 1px 6px rgba(0, 0, 0, 0.07);
+                padding: 1.2em 1em;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                transition: box-shadow 0.2s;
+            }
+
+            .events-list li:hover {
+                box-shadow: 0 4px 16px rgba(44, 62, 80, 0.12);
+            }
+
+            .events-list img {
+                width: 100%;
+                max-width: 280px;
+                border-radius: 8px;
+                margin-bottom: 0;
+                box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+            }
+
+            .btn-secondary {
+                margin-top: 1em;
+                padding: 0.7em 1.5em;
+                border-radius: 6px;
+                background: #2980b9;
+                color: #fff;
+                text-decoration: none;
+                font-weight: 500;
+                transition: background 0.2s;
+                display: inline-block;
+            }
+
+            .btn-secondary:hover {
+                background: #1c5d8c;
+            }
+        </style>
+        <h2>Próximos Eventos</h2>
+        <ul class="events-list">
+            <li>
+                <strong>Domingo, 19h</strong> - Culto de Celebração
+            </li>
+            <li>
+                <img src="imagens/abnh burguer.jpg" alt="ABNH Burguer"
+                    style="width:100%;max-width:300px;display:block;margin-bottom:8px;">
+                <strong>11 de Julho, 19h às 21h</strong> - ABNH Burguer<br>
+                <span>Pão de hambúrguer, hambúrguer na brasa, maionese caseira, cebola caramelizada, alface americana,
+                    barbecue, queijo, tomate, bacon. Valor: R$27.</span>
+            </li>
+
+            <li>
+                <img src="imagens/compr e cuidar.jpg" alt="Compreender e Cuidar"
+                    style="width:100%;max-width:300px;display:block;margin-bottom:8px;">
+                <strong>12 de Julho, 15h</strong> - Compreender e Cuidar<br>
+                <span>Encontro com o Psicólogo Marcelo Perpétuo. Leve 1kg de alimento não perecível.</span>
+            </li>
+            <li>
+                <img src="imagens/arraia.jpg" alt="Arraiá da ABNH"
+                    style="width:100%;max-width:300px;display:block;margin-bottom:8px;">
+                <strong>19 de Julho, 15h30</strong> - Arraiá da ABNH<br>
+                <span>Comunhão, comida típica e diversão. Leve 1kg de alimento não perecível.</span>
+            </li>
+        </ul>
+        <a href="#" class="btn-secondary">Ver Todos os Eventos</a>
+    </section>
+    <section class="contact" id="contact">
+        <h2>Contato</h2>
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" required placeholder="Seu nome">
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required placeholder="seu@email.com">
+            </div>
+            <div class="form-group">
+                <label for="message">Mensagem</label>
+                <textarea id="message" name="message" rows="4" required placeholder="Sua mensagem"></textarea>
+            </div>
+            <button type="submit" class="btn-primary">Enviar</button>
+        </form>
+        <div class="contact-info">
+            <p><strong>E-mail:</strong> contato@abnh.org.br</p>
+            <p><strong>Endereço:</strong> Rua Exemplo, 123 - Novo Hamburgo, RS</p>
+            <p><strong>Telefone:</strong> (51) 99999-9999</p>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>&copy; 2024 Aliança Bíblica de Novo Hamburgo. Todos os direitos reservados.</p>
+</footer>
+
+<script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        menuToggle.classList.toggle('active');
+    });
+</script>
+
 </body>
 
 </html>
